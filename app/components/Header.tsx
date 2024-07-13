@@ -26,7 +26,7 @@ const Header: FC<Props> = ({ activeItem, setOpen }) => {
   }
 
   return (
-    <div className="w-full h-auto sticky top-0 left-0">
+    <div className="w-full h-auto sticky top-0 left-0 backdrop-blur-xl">
       <div
         className={`${
           active
@@ -34,7 +34,7 @@ const Header: FC<Props> = ({ activeItem, setOpen }) => {
             : "w-full border-b dark:border-[#ffffff1c] h-[80px] z-50 dark:shadow"
         }`}
       >
-        <div className=" 800px:w-[92%] m-auto py-2 h-full">
+        <div className=" md:w-[92%] m-auto py-2 h-full">
           <div className="w-full h-[80px] flex items-center justify-between p-3">
             <Link
               href={"/"}

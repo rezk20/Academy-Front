@@ -6,11 +6,15 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <>
-      <Image
-        layout="fill"
-        src="/bg-grid.svg"
+      <img
         alt="background"
-        className="w-screen h-screen absolute top-0 left-0 -z-50"
+        fetchPriority="high"
+        width="1572"
+        height="795"
+        decoding="async"
+        data-nimg="1"
+        className="absolute  w-screen top-0  left-0 -z-10"
+        src="/bg-grid.svg"
       />
       <div className="h-screen w-full relative "></div>
     </>
