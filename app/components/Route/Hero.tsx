@@ -18,6 +18,7 @@ const Hero = (props: Props) => {
       />
       <div className="h-screen w-full relative "></div>
     </>
+    test
   );
 };
 export default Hero;
