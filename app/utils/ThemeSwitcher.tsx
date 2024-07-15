@@ -20,7 +20,7 @@ export function ThemeSwitcher() {
       <DropdownMenuTrigger asChild>
         <Button
           variant="ghost"
-          className="outline-none border-none focus:outline-none"
+          className="outline-none border-none focus:outline-none rounded-full bg-trasnparent"
           size="icon"
         >
           <Sun className="h-[25px] w-[25px] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
@@ -30,7 +30,7 @@ export function ThemeSwitcher() {
       </DropdownMenuTrigger>
       <DropdownMenuContent
         align="end"
-        className="dark:bg-neutral-950 dark:border-[#ffffff1c] text-center flex flex-col items-center justify-center py-2"
+        className="dark:bg-neutral-950/30 bg-white/30 backdrop-blur-xl dark:border-[#ffffff1c] text-center flex flex-col items-center justify-center py-2 z-[9999999]"
       >
         <DropdownMenuItem onClick={() => setTheme("light")}>
           Light

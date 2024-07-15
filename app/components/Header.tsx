@@ -26,7 +26,7 @@ const Header: FC<Props> = ({ activeItem, setOpen }) => {
   }
 
   return (
-    <div className="w-full h-auto sticky top-0 left-0 backdrop-blur-xl">
+    <div className="w-full h-[80px] fixed top-0 left-0 backdrop-blur-xl z-[999999] flex items-center">
       <div
         className={`${
           active
